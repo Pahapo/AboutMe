@@ -1,5 +1,5 @@
       let typed = new Typed('#typed', { 
-        strings: ["Web Developer", "JavaScript/React developer", "UI/UX Designer"], 
+        strings: ["Web Developer", "JavaScript/React developer"], 
         typeSpeed: 100,
         startDelay: 500,
         backSpeed: 50,
