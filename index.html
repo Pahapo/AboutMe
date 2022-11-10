@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="msapplication-TileColor" content="#9c92fb">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- for mobile -->
+        <title>Частичка меня</title>
+        <link name="author" content="Author: Popov Pavel, github: https://github.com/Pahapo">
+
+        <link rel="stylesheet" href="src/css/loading.css" type="text/css">
+        <link rel="stylesheet" href="src/css/fonts.css" type="text/css">
+        <link rel="stylesheet" href="src/css/animation.css" type="text/css">
+        <link rel="stylesheet" href="src/css/style.css" type="text/css">
+    </head>
+    <body class="body">
+        
+        <div class="preloader">
+            <div class="preloader__row">
+                <div class="preloader__item"></div>
+                <div class="preloader__item"></div>
+            </div>
+        </div>
+
+        <header class="header">
+        <div class="header_title">
+                <img src="img/light-bulb.png">
+                <h1>Сопроводительное письмо</h1>
+            </div>
+        </header>
+        <div class="container">
+
+            <div class="author_me">
+                <img src="img/young-man.png">
+                <h2>Попов Павел Сергеевич</h2>
+                <h3>
+                    <span id="typed"></span>
+                </h3>
+            </div>
+            
+            <section class="max-img">
+                <h3 style="margin: 40px 0 10px 0;">Меня зовут</h3>
+                <h2>Попов Павел Сергеевич</h2>
+                <h3>Контакты</h3>
+                <div class="tab">
+                    <img src="img/calling.png">
+                    <a href="tel:+375299536916">
+                        <h2>+375 (29) 953-69-16</h2>
+                    </a>
+                </div>
+                <div class="tab">
+                    <img src="img/email.png">
+                    <a href="mailto:pashapopov4055@gmail.com">
+                        <h2>pashapopov4055@gmail.com</h2>
+                    </a>
+                </div>
+
+                <h3>Обо мне</h3>
+                <h2>Меня зовут Павел, мне <span id="my_age">20 лет</span> и я <span id="my_course">студент 4 курса</span> ведущего транспортного вуза Беларуси: Белорусский государственный университет транспорта (БелГУТ). Являюсь создателем сайта "Информационный портал для абитуриентов", который Вы сейчас просматриваете.</h2><br>
+                <h2>Владею знаниями HTML, используя методологию БЭМ, CSS, препроцессором LESS. При работе пользуюсь псевдоэлементами и псевдоклассами. Пользуюсь знаниями JS при работе с плагинами.</h2><br>
+                <h2>Использую Photoshop и Figma для работы с макетами.</h2><br>
+                <h2>С энтузиазмом отношусь к людям, знающим больше меня, и способным научить чему-то новому.</h2>
+                
+                <h3>Портфолио</h3>
+                <div class="tab">
+                    <img src="img/github.png">
+                    <h2><a class="a" href="https://github.com/Pahapo" target="_blank">https://github.com/Pahapo</a></h2>
+                </div><div class="tab">
+                    <img src="img/linkedin.png">
+                    <h2><a class="a" href="https://www.linkedin.com/in/Pahapo" target="_blank">https://www.linkedin.com/in/Pahapo</a></h2>
+                </div>
+                <h3>Образование</h3>
+
+                <table class="table-history tab">
+                    <tr>
+                        <td>
+                            <p>2019</p>
+                        </td>
+                        <td>
+                            <h2>Гомельский Городской Лицей</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>2023</p>
+                        </td> 
+                        <td>
+                            <h2>Белорусский Государственный Университет Транспорта</h2>
+                        </td>
+                    </tr>
+                </table> 
+            </section>
+        </div>
+
+        <script src="src/js/jsdelivr.js"></script>
+        <!-- <script>
+            let typed = new Typed('#typed', { 
+                strings: ["Web Developer", "JavaScript/React developer", "UI/UX Designer"], 
+                typeSpeed: 100,
+                startDelay: 500,
+                backSpeed: 50,
+                loop: true,
+            });
+        </script> -->
+
+        <script src="src/js/loading.js"></script>
+        <script src="src/js/main.js"></script>
+    </body>
+</html>
