@@ -25,6 +25,7 @@ button, input {
 
 .container {
   max-width: 1000px;
+  height: 100%;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -90,6 +91,12 @@ body {
     max-width: 500px;
   }
 
+  .header-text{
+    margin: 150px 0 50px 0; 
+    font-size: 32px; 
+    font-weight: 600;
+  }
+
   .main-title {
     color: #8d8d8d; 
     margin: -15px 0;
@@ -142,18 +149,55 @@ body {
     line-height: 40px;
   }
 
-  .max-img img{
+  .content, .content-project {
+    position: relative;
+    display: flex;
+    align-items: start;
+    margin: auto;
+    height: 100%;
+  }
+
+  .content img{
     max-width: 20px;
   }
 
-  .max-img h2{
+  .content h2, .content-project h2{
     margin: 0;
     font-weight: 400;
   }
 
-  .max-img h3{
+  .content h3, .content-project h3{
     color: #707070;
     margin: 15px 0 10px 0;
+  }
+
+  .content-small{
+    width: 35%;
+  }
+
+  .content-max{
+    width: 65%;
+  }
+
+  .content-line{
+    width: 3px;
+    height: 500px;
+    background-color: #978bfc;
+    border-radius: 2px;
+    margin: 0 20px;
+  }
+
+  .horizontal-line{
+    height: 3px;
+    width: 100%;
+    background-color: #978bfc;
+    border-radius: 2px;
+    margin: 20px 0;
+  }
+
+  .anchor{
+    position: absolute;
+    top: -180px
   }
 
   .header_title img{
@@ -378,6 +422,30 @@ body {
 
   .block-code__plan {
     margin-top: 5px;
+  }
+
+  .skills{
+    display: block;
+    width: 100%;
+  }
+
+  .skills-items{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .skills-items h2:nth-child(1){
+    color: #978bfc;
+    width: 30%;
+  }
+
+  .skills-items h2:nth-child(2){
+    width: 30%;
+  }
+  .skills-items h2:nth-child(3), .skills-items h2:nth-child(4){
+    width: 20%;
   }
 
   .years{
@@ -691,6 +759,14 @@ body {
   
   .war span, .hostel span {
     color: #9c92fb;
+  }
+
+  .web {
+    display: flex;
+  }
+
+  .mobile{
+    display: none;
   }
 
   .author, .author_me {
@@ -1692,6 +1768,30 @@ input:checked + .slider_btn:before {
   .sport-block {
     display: block;
   }
+  .web {
+    display: none;
+  }
+  .mobile{
+    display: block;
+  }
+  .header-text{
+    margin: 90px 0 30px 0; 
+  }
+  .skills-items h2:nth-child(1), .skills-items h2:nth-child(2){
+    width: 35%;
+  }
+  .skills-items h2:nth-child(3), .skills-items h2:nth-child(4){
+    width: 15%;
+  }
+  .content-project{
+    display: block;
+  }
+  .content-project .content-small, .content-project .content-max{
+    width: 100%;
+  }
+  .content-project .content-line{
+    display: none;
+  }
   .block-sport {
     width: 100%;
     margin-bottom: 15px;
@@ -1749,10 +1849,14 @@ input:checked + .slider_btn:before {
 
 @media (max-width:450px) {
   .container {
-    padding: 0 10px;
+    padding: 0 20px;
   }
   .block {
     padding: 13px;
+  }
+  .content {
+    position: static;
+    margin: auto;
   }
   h1 {
     font-size: 16px;
